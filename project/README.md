@@ -9,8 +9,8 @@ Instructions:
  * Create a destination directory for these files and clone the contents of this repository into it.
  * For instructions on cloning a repository, see https://help.github.com/articles/fetching-a-remote
  * (optional) If you wish to re-fetch the source data:
- ** Delete the contents of the 'data' directory
- ** Download and uncompress the .zip file below into the 'data' subdirectory (see Data, under References)
+  * Delete the contents of the 'data' directory
+  * Download and uncompress the .zip file below into the 'data' subdirectory (see Data, under References)
 
 References:
  * Project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 

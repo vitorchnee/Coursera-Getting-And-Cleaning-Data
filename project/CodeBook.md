@@ -1,13 +1,11 @@
-# Code Book for:
-*  ./data/summary.txt (output from run_analysis.R)
+# Code Book
+* ./data/summary.txt (output from run_analysis.R) - To produce the output file, ./data/summary.txt, the run_analysis.R script merges test and training measurements, subject and activity datafrom the UCI data sets (see References, Data), then the mean is computed for all but the ID Fields.
 
-# References:
+## References:
 * Project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 * Data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-To produce the output file, ./data/summary.txt, the run_analysis.R script merges test and training measurements, subject and activity datafrom the UCI data sets (see References, Data), then the mean is computed for all but the ID Fields.
-
-# Files Referenced:
+## Files Referenced:
 * ./data/UCI HAR Dataset/features.txt - All features, a subset was extracted for this exercise. See below.
 * ./data/UCI HAR Dataset/activity_labels.txt - activity.id to activity dictionary
 * ./data/test/subject_test.txt - Subject IDs (test)
@@ -17,12 +15,12 @@ To produce the output file, ./data/summary.txt, the run_analysis.R script merges
 * ./data/test/X_test.txt - Feature Measurements (test)
 * ./data/train/X_train.txt - Feature Measurments (train)
 
-# ID Fields (df samples)
+## ID Fields (df samples)
 * `subject.id` - The participant ID (AKA subject)
 * `activity.id` - The activity ID 
 * `activity` - The activity label
 
-# Features Extracted (df samples)
+## Features Extracted (df samples)
 X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`
 * 2 - `tBodyAcc_mean_Y`
@@ -91,7 +89,7 @@ X (col-index) - Label
 * 542 - `fBodyBodyGyroJerkMag_mean`
 * 543 - `fBodyBodyGyroJerkMag_std`
 
-# Activity Labels (src: ./data/UCI HAR Dataset/activity_labels.txt)
+## Activity Labels (src: ./data/UCI HAR Dataset/activity_labels.txt)
 activity.id - activity
 * 1 - `WALKING`
 * 2 - `WALKING_UPSTAIRS`

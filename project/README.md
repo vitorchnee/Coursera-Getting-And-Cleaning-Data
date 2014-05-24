@@ -3,7 +3,7 @@ In this project, you'll find:
  * A code book for the output file produced when you run this script, ./CodeBook.md
  * A copy of the output from running this script (instructions below), ./data/summary.txt
  * A copy of the input data, from the UCI (Human Activity Recognition) project, fetched 20 May 2014
- * This file, README.md
+ * This file, ./README.md
 
 Instructions:
  * Install matching or compatible versions of the Software described in Test Conditions (note plyr)

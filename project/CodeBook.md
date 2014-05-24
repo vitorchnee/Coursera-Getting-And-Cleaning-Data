@@ -1,5 +1,5 @@
 # Code Book
-* ./data/summary.txt (output from run_analysis.R) - To produce the output file, ./data/summary.txt, the run_analysis.R script merges test and training measurements, subject and activity datafrom the UCI data sets (see References, Data), then the mean is computed for all but the ID Fields.
+* ./data/summary.txt (output from run_analysis.R) - To produce this file, the script (run_analysis.R) merges test and training measurements, subject and activity data from the UCI data set (AKA the "Human Activity Recognition Using Smartphones Dataset." see References, Data), then the mean is computed for all but the ID Columns.
 
 ## References:
 * Project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -15,12 +15,14 @@
 * ./data/test/X_test.txt - Feature Measurements (test)
 * ./data/train/X_train.txt - Feature Measurments (train)
 
-## ID Fields (df samples)
+## ID Columns (See DF samples, DF summary and output file)
 * `subject.id` - The participant ID (AKA subject)
 * `activity.id` - The activity ID 
 * `activity` - The activity label
 
-## Features Extracted (df samples)
+## Features Extracted (See DF samples, DF summary and output file)
+This list was hand-picked. I intentionally picked only the mean and standard deviation values (excluding all others, including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate for all measurements.
+
 X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`
 * 2 - `tBodyAcc_mean_Y`
@@ -89,7 +91,7 @@ X (col-index) - Label
 * 542 - `fBodyBodyGyroJerkMag_mean`
 * 543 - `fBodyBodyGyroJerkMag_std`
 
-## Activity Labels (src: ./data/UCI HAR Dataset/activity_labels.txt)
+## Activity Labels (src: ./data/UCI HAR Dataset/activity_labels.txt) reference/dictionary
 activity.id - activity
 * 1 - `WALKING`
 * 2 - `WALKING_UPSTAIRS`

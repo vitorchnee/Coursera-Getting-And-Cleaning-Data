@@ -98,3 +98,4 @@ activity.id - activity
 4 - `SITTING`
 5 - `STANDING`
 6 - `LAYING`
+

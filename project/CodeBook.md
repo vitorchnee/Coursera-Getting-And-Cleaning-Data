@@ -23,7 +23,7 @@ To produce the output file, ./data/summary.txt, the run_analysis.R script merges
 * `activity` - The activity label
 
 # Features Extracted (df samples)
-* X (col-index) - Label
+X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`
 * 2 - `tBodyAcc_mean_Y`
 * 3 - `tBodyAcc_mean_Z`
@@ -92,7 +92,7 @@ To produce the output file, ./data/summary.txt, the run_analysis.R script merges
 * 543 - `fBodyBodyGyroJerkMag_std`
 
 # Activity Labels (src: ./data/UCI HAR Dataset/activity_labels.txt)
-* activity.id - activity
+activity.id - activity
 * 1 - `WALKING`
 * 2 - `WALKING_UPSTAIRS`
 * 3 - `WALKING_DOWNSTAIRS`

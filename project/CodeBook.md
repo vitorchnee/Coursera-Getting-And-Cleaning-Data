@@ -23,7 +23,7 @@
 ## Features (See DF samples, DF summary and output file)
 This list was hand-picked from all the measurements available in source files (and merged DF, X). I intentionally picked only measurements of mean and standard deviation so excluded all others (including the MeanFreq fields). Additional columns may be added to the output by amending X_fcols, a feature column index. However, bear in mind the output will take the mean of all samples which may not be appropriate technique for aggregating some measurements. 
 
-I intentionally left the underscores since these were helpful to read what are already heavily abbreviated strings. To remove, simply incorpoarate an add'l gsub("_","",..).
+I intentionally left the underscores since these were helpful to read what are already heavily abbreviated strings. To remove, simply incorpoarate an add'l gsub("_","",..) or consolidate into single gsub w/ expr. "\\(\\))" and no replacement ("").
 
 X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`

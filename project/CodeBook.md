@@ -1,5 +1,5 @@
 # Code Book
-* ./data/summary.txt (output from run_analysis.R) - To produce this file, the script (run_analysis.R) merges test and training measurements, subject and activity data from the UCI data set (AKA the "Human Activity Recognition Using Smartphones Dataset." see References, Data), then the mean is computed for all but the ID Columns. The summary output, in currently configured form and with source data fetched 20 May 2014, has 180 rows and 69 columns. Changing X_fnames and X_fcols or altering the source measurement data can change the output dimensions. See also, README.md. 
+./data/summary.txt (output from run_analysis.R) - To produce this file, the script (run_analysis.R) merges test and training measurements (X), subject (s) and activity (y) data from the UCI data set (AKA the "Human Activity Recognition Using Smartphones Dataset" - see References, Data), then the mean is computed for each ID tuple. The summary output, in currently configured form and with source data fetched 20 May 2014, has 180 rows and 69 columns. Changing X_fnames and X_fcols or altering the source measurement data can change the output dimensions. See also, README.md. 
 
 ## References:
 * Project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -99,4 +99,3 @@ activity.id - activity
 * 4 - `SITTING`
 * 5 - `STANDING`
 * 6 - `LAYING`
-

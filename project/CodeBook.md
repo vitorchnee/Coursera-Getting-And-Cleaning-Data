@@ -21,7 +21,7 @@
 * `activity` - The activity label
 
 ## Features (See DF samples, DF summary and output file)
-This list was hand-picked from all the measurements available in source file (and merged DF) X. I intentionally picked only measurements of mean and standard deviation (so excluded all others, including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate technique for aggregating all measurements.
+This list was hand-picked from all the measurements available in source files (and merged DF, X). I intentionally picked only measurements of mean and standard deviation so excluded all others (including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate technique for aggregating some measurements.
 
 X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`

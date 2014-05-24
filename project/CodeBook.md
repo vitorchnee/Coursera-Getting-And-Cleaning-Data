@@ -20,7 +20,7 @@
 * `activity.id` - The activity ID 
 * `activity` - The activity label
 
-## Features Extracted (See DF samples, DF summary and output file)
+## Features (See DF samples, DF summary and output file)
 This list was hand-picked. I intentionally picked only the mean and standard deviation values (excluding all others, including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate for all measurements.
 
 X (col-index) - Label

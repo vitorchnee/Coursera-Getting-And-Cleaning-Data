@@ -1,5 +1,5 @@
 # Code Book
-* ./data/summary.txt (output from run_analysis.R) - To produce this file, the script (run_analysis.R) merges test and training measurements, subject and activity data from the UCI data set (AKA the "Human Activity Recognition Using Smartphones Dataset." see References, Data), then the mean is computed for all but the ID Columns.
+* ./data/summary.txt (output from run_analysis.R) - To produce this file, the script (run_analysis.R) merges test and training measurements, subject and activity data from the UCI data set (AKA the "Human Activity Recognition Using Smartphones Dataset." see References, Data), then the mean is computed for all but the ID Columns. The summary output, in currently configured form and with source data fetched 20 May 2014, has 180 rows and 69 columns. Changing X_fnames and X_fcols or altering the source measurement data can change the output dimensions. See also, README.md. 
 
 ## References:
 * Project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -21,7 +21,7 @@
 * `activity` - The activity label
 
 ## Features (See DF samples, DF summary and output file)
-This list was hand-picked. I intentionally picked only the mean and standard deviation values (excluding all others, including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate for all measurements.
+This list was hand-picked from all the measurements available in source file (and merged DF) X. I intentionally picked only measurements of mean and standard deviation (so excluded all others, including the MeanFreq fields). Additional columns may be added to the output by amending X_fnames and X_fcols, respectively; a feature name and column index. However, bear in mind the output will take the mean of all samples which may not be appropriate technique for aggregating all measurements.
 
 X (col-index) - Label
 * 1 - `tBodyAcc_mean_X`

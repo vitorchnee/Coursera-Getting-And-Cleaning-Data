@@ -34,7 +34,7 @@ for (column in 1:length(X_fcols)) {
 samples <- cbind(y, s, X[X_fcols]); names(samples)[1]<-"activity.id"
 samples <- merge(samples, activities, by.x="activity.id", by.y="id", sort=FALSE)
 
-# Creates a second, independent tidy data (called summary) set with the average of each variable 
+# Creates a second, independent tidy data set (called summary) with the average of each retained feature
 summary <- ddply(samples, .(activity,subject.id), numcolwise(mean))
 if(!file.exists("data")) { dir.create("data") }
 write.table(summary, "./data/summary.txt", sep=" ")
